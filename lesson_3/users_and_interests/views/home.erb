@@ -1,0 +1,8 @@
+<nav>
+  <h2>Users</h2>
+  <ul>
+    <% @user_data.keys.each do |name| %>
+      <li><a href="/user/<%= name %>"><%= name.capitalize %></a></li>
+    <% end %>
+  </ul>
+</nav>

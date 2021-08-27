@@ -1,0 +1,15 @@
+<section>
+  <h2><%= params[:name].capitalize %></h2>
+  <p>Email: <%= @user_data[@name][:email] %></p>
+  <h4>Interests</h4>
+  <p><%= @interests %></p>
+</section>
+
+<nav>
+  <h2>Users</h2>
+  <ul>
+    <% @other_users.each do |name| %>
+      <li><a href="/user/<%= name %>"><%= name.capitalize %></a></li>
+    <% end %>
+  </ul>
+</nav>
